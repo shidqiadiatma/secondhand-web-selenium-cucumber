@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-02T13:47:48 WIB" name="All Test Suite" finished-at="2023-12-02T13:47:59 WIB" duration-ms="11226">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shidqiadiatma.runners.testRunner@765d7657]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-12-02T13:47:48 WIB" name="Login Test" finished-at="2023-12-02T13:47:59 WIB" duration-ms="11226">
+      <class name="com.shidqiadiatma.runners.testRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.shidqiadiatma.runners.testRunner@765d7657]" started-at="2023-12-02T13:47:48 WIB" name="setUpClass" finished-at="2023-12-02T13:47:49 WIB" duration-ms="1370" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@45ca843]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setupBrowser()[pri:0, instance:com.shidqiadiatma.runners.testRunner@765d7657]" started-at="2023-12-02T13:47:50 WIB" name="setupBrowser" finished-at="2023-12-02T13:47:52 WIB" duration-ms="2440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupBrowser -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.shidqiadiatma.runners.testRunner@765d7657]" started-at="2023-12-02T13:47:52 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-02T13:47:58 WIB" duration-ms="6364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["As a user, I should be able to update profile"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Update Profile"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="teardownBrowser()[pri:0, instance:com.shidqiadiatma.runners.testRunner@765d7657]" started-at="2023-12-02T13:47:58 WIB" name="teardownBrowser" finished-at="2023-12-02T13:47:58 WIB" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownBrowser -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.shidqiadiatma.runners.testRunner@765d7657]" started-at="2023-12-02T13:47:58 WIB" name="tearDownClass" finished-at="2023-12-02T13:47:59 WIB" duration-ms="844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.shidqiadiatma.runners.testRunner -->
+    </test> <!-- Login Test -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
