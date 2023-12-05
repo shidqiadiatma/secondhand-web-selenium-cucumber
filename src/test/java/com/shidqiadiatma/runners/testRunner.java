@@ -14,7 +14,7 @@ import java.time.Duration;
 
 @CucumberOptions(features = "src/test/java/com/shidqiadiatma/features",
         glue = "com.shidqiadiatma.steps",
-        tags = "@sanity",
+        tags = "",
         plugin = {
                 "pretty",
                 "html:reports/cucumber-result/cucumber-reports.html",

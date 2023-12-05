@@ -3,7 +3,14 @@ package com.shidqiadiatma.helpers;
 import com.github.javafaker.Avatar;
 import com.github.javafaker.Faker;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
 public class randomData {
+
+    static List<String> indexList = Arrays.asList("4", "3", "1", "5", "2");
+    static Random random = new Random();
     static Faker faker = new Faker();
 
     public static Faker getJaveFaker() {
@@ -29,6 +36,21 @@ public class randomData {
         return faker.internet().emailAddress();
     }
 
+    public static String getValue() {
+        int randomIndex = Integer.parseInt(indexList.get(random.nextInt(indexList.size())));
+        return indexList.get(randomIndex);
+    }
+    public static String getProductName() {
+        return faker.commerce().productName();
+    }
+
+    public static String getProductPrice() {
+        return faker.commerce().price();
+    }
+
+    public static String getDescription() {
+        return faker.lorem().sentence();
+    }
     public static String password(int minimumLength, int maximumLength, boolean includeUppercase, boolean includeSpecial, boolean includeDigit) {
         if (includeSpecial) {
             char[] password = faker.lorem().characters(minimumLength, maximumLength, includeUppercase, includeDigit).toCharArray();

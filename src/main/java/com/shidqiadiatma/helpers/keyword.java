@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.openqa.selenium.support.ui.Select;
+
 
 import java.io.File;
 import java.time.Duration;
@@ -21,14 +23,23 @@ public class keyword {
     }
 
     public static void tapElement(WebElement webElement) {
-        waitElementToBeDisplayed(webElement);
+        wait_element_to_be_displayed(webElement);
         webElement.click();
     }
 
     public static void inputText(WebElement webElement, String value) {
-        waitElementToBeDisplayed(webElement);
+        wait_element_to_be_displayed(webElement);
         webElement.sendKeys(value);
     }
+    public static void clearText(WebElement webElement) {
+        wait_element_to_be_displayed(webElement);
+        webElement.clear();
+    }
+    public static void uploadFile(WebElement fileInput, String filePath) {
+        wait_element_to_be_displayed(fileInput);
+        fileInput.sendKeys(filePath);
+    }
+
 
     public static void validate_element_is_visible_and_enabled(WebElement webElement) {
         WebDriverWait wait = new WebDriverWait(driverManager.getInstance().getDriver(), Duration.ofSeconds(5));
@@ -40,21 +51,27 @@ public class keyword {
         }
     }
 
-    public static void waitElementToBeDisplayed(WebElement element) {
+    public static void wait_element_to_be_displayed(WebElement element) {
         WebDriverWait wait = new WebDriverWait(driverManager.getInstance().getDriver(), Duration.ofSeconds(25));
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-    public static void assertCurrentUrl(String expectedUrl) {
+    public static void assert_current_url(String expectedUrl) {
         String actualUrl = driverManager.getInstance().getDriver().getCurrentUrl();
         Assert.assertEquals(actualUrl, expectedUrl);
+    }
+
+    public static void selectOption(WebElement webElement, String value) {
+        wait_element_to_be_displayed(webElement);
+        Select dropdown = new Select(webElement);
+        dropdown.selectByValue(value);
     }
 
     public static void assertWording(String expectedUrl) {
         String actualUrl = driverManager.getInstance().getDriver().getCurrentUrl();
         Assert.assertEquals(actualUrl, expectedUrl);
     }
-    public static void takeScreenshot(String fileName) {
+    public static void take_screenshot(String fileName) {
         try {
             TakesScreenshot screenshot = ((TakesScreenshot) driverManager.getInstance().getDriver());
             File sourceFile = screenshot.getScreenshotAs(OutputType.FILE);

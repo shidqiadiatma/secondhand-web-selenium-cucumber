@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Dec 2, 2023 01:47:49 PM</span></a>
+<a href="#"><span class="badge badge-primary">Dec 4, 2023 11:04:40 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,19 +66,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Dec 2, 2023 01:47:49 PM</h3>
+<h3>Dec 4, 2023 11:04:40 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Dec 2, 2023 01:47:58 PM</h3>
+<h3>Dec 4, 2023 11:05:11 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>4</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -101,7 +101,7 @@
 </div>
 <div class="card-footer">
 <div><small data-tooltip='100%'>
-<b>1</b> features passed
+<b>4</b> features passed
 </small>
 </div>
 <div>
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>6</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>25</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Update Profile":6.029
+"Login":7.522,"Register":8.419,"Update Profile":3.508,"Update Profile":3.976
 };
 </script>
 <div class="row">
@@ -172,8 +172,16 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
+<td>@negative</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
 <td>@positive</td>
-<td>1</td>
+<td>4</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -188,8 +196,32 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@sanity</td>
+<td>@smoke</td>
 <td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@login</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@sell</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@register</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -226,18 +258,18 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 4,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 6,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
+passGrandChild: 25,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -262,7 +294,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@positive</a><a class="dropdown-item" href="#">@profile</a><a class="dropdown-item" href="#">@sanity</a>
+<a class="dropdown-item" href="#">@negative</a><a class="dropdown-item" href="#">@positive</a><a class="dropdown-item" href="#">@profile</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@login</a><a class="dropdown-item" href="#">@sell</a><a class="dropdown-item" href="#">@register</a>
 </ul>
 </li>
 </ul>
@@ -273,9 +305,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Update Profile</p>
+            <p class="name">Login</p>
             <p class="text-sm">
-              <span>1:47:52 PM</span> / <span>00:00:06:029</span>
+              <span>11:04:43 PM</span> / <span>00:00:07:522</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -283,10 +315,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Update Profile</h5>
-<span class='badge badge-success'>12.02.2023 1:47:52 PM</span>
-<span class='badge badge-danger'>12.02.2023 1:47:58 PM</span>
-<span class='badge badge-default'>00:00:06:029</span>
+<h5 class="test-status text-pass">Login</h5>
+<span class='badge badge-success'>12.04.2023 11:04:43 PM</span>
+<span class='badge badge-danger'>12.04.2023 11:04:51 PM</span>
+<span class='badge badge-default'>00:00:07:522</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -298,7 +330,266 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>As a user, I should be able to update profile</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>As a user, I should be able to log in using correct registered data on secondhand-binaracademy</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.commonStep.navigateToUrl(java.lang.String)">
+                <span>Given user navigate to url "https://secondhand.binaracademy.org/users/sign_in"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.commonStep$loginCommon.loginAs(java.lang.String)">
+                <span>When user login using "correct registered credential"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.registerStep.userDirectToDashboardScreen()">
+                <span>Then user direct to dashboard screen</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="6"><span class="badge log pass-bg mr-2">Pass</span>As a user, I can't log in using wrong password to secondhand-binaracademy</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>As a user, I can't log in using wrong password to secondhand-binaracademy</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigate to url "https://secondhand.binaracademy.org/users/sign_in"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user login using "wrong password"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user verify snackbar error with value "Invalid Email or password."</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>* user take screenshot with snackbar error "user_failed_login_with_wrong_password"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Register</p>
+            <p class="text-sm">
+              <span>11:04:52 PM</span> / <span>00:00:08:419</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Register</h5>
+<span class='badge badge-success'>12.04.2023 11:04:52 PM</span>
+<span class='badge badge-danger'>12.04.2023 11:05:01 PM</span>
+<span class='badge badge-default'>00:00:08:419</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>As a user, I should be able to register with an unregistered email on secondhand-binaracademy.</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.commonStep.navigateToUrl(java.lang.String)">
+                <span>Given user navigate to url "https://secondhand.binaracademy.org/users/sign_up"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.commonStep$registerCommon.userRegistrationUsing(java.lang.String)">
+                <span>When user registration using "correct unregistered data"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.registerStep.userDirectToDashboardScreen()">
+                <span>Then user direct to dashboard screen</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.commonStep$registerCommon.userTakeScreenshotOnDashboardScreen(java.lang.String)">
+                <span>* user take screenshot on dashboard screen "user_register_successfully"</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="18"><span class="badge log pass-bg mr-2">Pass</span>As a user, I shouldn't be able to register with a registered email on secondhand-binaracademy.</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>As a user, I shouldn't be able to register with a registered email on secondhand-binaracademy.</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user navigate to url "https://secondhand.binaracademy.org/users/sign_up"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When user registration using "registered data"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user verify inline error with value "Email has already been taken"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>* user take screenshot with inline error "user_failed_register_with_registered_email"</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Profile</p>
+            <p class="text-sm">
+              <span>11:05:02 PM</span> / <span>00:00:03:508</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update Profile</h5>
+<span class='badge badge-success'>12.04.2023 11:05:02 PM</span>
+<span class='badge badge-danger'>12.04.2023 11:05:05 PM</span>
+<span class='badge badge-default'>00:00:03:508</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="25"><span class="badge log pass-bg mr-2">Pass</span>As a user, I should be able to update profile</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.commonStep.navigateToUrl(java.lang.String)">
+                <span>Given user navigate to url "https://secondhand.binaracademy.org/users/sign_in"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.commonStep$loginCommon.loginAs(java.lang.String)">
+                <span>When user login using "correct registered credential"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.commonStep$sellProduct.userClickJualButton()">
+                <span>* user click jual button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.commonStep$sellProduct.userFillsInAllProductData()">
+                <span>* user fills in all product data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="com.shidqiadiatma.steps.sellProductStep.userVerifyProductUploadedSuccessfully()">
+                <span>Then user verify product uploaded successfully</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Update Profile</p>
+            <p class="text-sm">
+              <span>11:05:07 PM</span> / <span>00:00:03:976</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Update Profile</h5>
+<span class='badge badge-success'>12.04.2023 11:05:07 PM</span>
+<span class='badge badge-danger'>12.04.2023 11:05:10 PM</span>
+<span class='badge badge-default'>00:00:03:976</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="32"><span class="badge log pass-bg mr-2">Pass</span>As a user, I should be able to update profile</div>
       </div>
     </div>
         <div class="collapse">
@@ -347,22 +638,22 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">7</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@positive</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@negative</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@positive</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@negative</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -375,9 +666,85 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:47:52 PM</td>
+<td>23:04:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>As a user, I should be able to update profile</a>
+<a href="#" class="linked" test-id='1' id='7'>As a user, I can't log in using wrong password to secondhand-binaracademy</a>
+<div class="">
+<span class="badge badge-default">Login.As a user, I can't log in using wrong password to secondhand-binaracademy</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:04:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='19'>As a user, I shouldn't be able to register with a registered email on secondhand-binaracademy.</a>
+<div class="">
+<span class="badge badge-default">Register.As a user, I shouldn't be able to register with a registered email on secondhand-binaracademy.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>4</span>
+</span>
+<p class="name">@positive</p>
+<p class="duration text-sm">4 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@positive</h4>
+<span status="pass" class='badge log pass-bg'>4 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:04:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>As a user, I should be able to log in using correct registered data on secondhand-binaracademy</a>
+<div class="">
+<span class="badge badge-default">Login.As a user, I should be able to log in using correct registered data on secondhand-binaracademy</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:04:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='13'>As a user, I should be able to register with an unregistered email on secondhand-binaracademy.</a>
+<div class="">
+<span class="badge badge-default">Register.As a user, I should be able to register with an unregistered email on secondhand-binaracademy.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:05:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='25'>As a user, I should be able to update profile</a>
+<div class="">
+<span class="badge badge-default">Update Profile.As a user, I should be able to update profile</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:05:07 PM</td>
+<td>
+<a href="#" class="linked" test-id='31' id='32'>As a user, I should be able to update profile</a>
 <div class="">
 <span class="badge badge-default">Update Profile.As a user, I should be able to update profile</span>
 </div>
@@ -411,9 +778,9 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:47:52 PM</td>
+<td>23:05:07 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>As a user, I should be able to update profile</a>
+<a href="#" class="linked" test-id='31' id='32'>As a user, I should be able to update profile</a>
 <div class="">
 <span class="badge badge-default">Update Profile.As a user, I should be able to update profile</span>
 </div>
@@ -428,12 +795,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@sanity</p>
+<p class="name">@smoke</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@sanity</h4>
+<h4>@smoke</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -447,11 +814,139 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>13:47:52 PM</td>
+<td>23:04:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>As a user, I should be able to update profile</a>
+<a href="#" class="linked" test-id='1' id='7'>As a user, I can't log in using wrong password to secondhand-binaracademy</a>
+<div class="">
+<span class="badge badge-default">Login.As a user, I can't log in using wrong password to secondhand-binaracademy</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@login</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@login</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:04:43 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>As a user, I should be able to log in using correct registered data on secondhand-binaracademy</a>
+<div class="">
+<span class="badge badge-default">Login.As a user, I should be able to log in using correct registered data on secondhand-binaracademy</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:04:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>As a user, I can't log in using wrong password to secondhand-binaracademy</a>
+<div class="">
+<span class="badge badge-default">Login.As a user, I can't log in using wrong password to secondhand-binaracademy</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@sell</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sell</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:05:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='24' id='25'>As a user, I should be able to update profile</a>
 <div class="">
 <span class="badge badge-default">Update Profile.As a user, I should be able to update profile</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@register</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@register</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:04:52 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='13'>As a user, I should be able to register with an unregistered email on secondhand-binaracademy.</a>
+<div class="">
+<span class="badge badge-default">Register.As a user, I should be able to register with an unregistered email on secondhand-binaracademy.</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>23:04:57 PM</td>
+<td>
+<a href="#" class="linked" test-id='12' id='19'>As a user, I shouldn't be able to register with a registered email on secondhand-binaracademy.</a>
+<div class="">
+<span class="badge badge-default">Register.As a user, I shouldn't be able to register with a registered email on secondhand-binaracademy.</span>
 </div>
 </td>
 </tr>

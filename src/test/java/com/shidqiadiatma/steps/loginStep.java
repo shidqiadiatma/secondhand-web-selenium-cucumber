@@ -16,10 +16,4 @@ public class loginStep {
         new loginPage(driverManager.getInstance().getDriver()).
                 verifyTitlePage(value);
     }
-
-//    @Then("user open About Page")
-//    public void userOpenAboutPage() {
-//        homePage HomePage = new homePage(driverManager.getInstance().getDriver());
-//        HomePage.tapAbout();
-//    }
 }

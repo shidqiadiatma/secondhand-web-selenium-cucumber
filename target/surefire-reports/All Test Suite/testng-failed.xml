@@ -8,8 +8,8 @@
           <include name="setUpClass"/>
           <include name="teardownBrowser"/>
           <include name="setupBrowser"/>
-          <include name="runScenario" invocation-numbers="0"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.shidqiadiatma.runners.testRunner -->
     </classes>

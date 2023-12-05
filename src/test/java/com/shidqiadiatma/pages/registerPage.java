@@ -6,19 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
-
 import java.time.Duration;
 
 public class registerPage {
-
     protected WebDriver webDriver;
-
     public registerPage(WebDriver driver) {
         this.webDriver = driver;
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         PageFactory.initElements(webDriver, this);
     }
-
     @FindBy(id = "user_name")
     private static WebElement input_username;
     @FindBy(id = "user_email")
@@ -38,7 +34,6 @@ public class registerPage {
         keyword.inputText(input_password, password);
         keyword.tapElement(button_daftar);
     }
-
     public void verifyTitlePage(String expectedMessage) {
         String actual = title_page.getText();
         Assert.assertEquals(actual, expectedMessage);

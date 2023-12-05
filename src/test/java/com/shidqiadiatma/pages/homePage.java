@@ -9,9 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import java.time.Duration;
 
 public class homePage {
-
     protected WebDriver webDriver;
-
     public homePage(WebDriver driver) {
         this.webDriver = driver;
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
@@ -24,18 +22,12 @@ public class homePage {
     @FindBy(xpath = "//div[@class='fs-5 fw-bold']")
     private static WebElement wording_username;
 
-
-
-
-//    public static void tap_burgerNav() {
-//        keyword..(burger_nav);
-//    }
+    @FindBy(xpath = "//a[@class='btn btn-primary btn-lg rounded-4 d-inline-flex align-items-center justify-content-space-between px-5']")
+    private static WebElement jual_button;
 
     public static void verify_telusuri_kategori_exist() {
         keyword.validate_element_is_visible_and_enabled(wording_telusuri_kategori);
     }
-
-
 
     public static void verify_profile_user_exist() {
         keyword.tapElement(profile_icon);
@@ -52,12 +44,7 @@ public class homePage {
 
     }
 
-//    public void userLogout() {
-//        keyword.tapElement(button_dropdown);
-//        keyword.tapElement(button_logout);
-//    }
-//    public void tapAbout(){
-//        keyword.tapElement(button_dropdown);
-//        keyword.tapElement(button_about);
-//    }
+    public static void tap_jual_button(){
+        keyword.tapElement(jual_button);
+    }
 }

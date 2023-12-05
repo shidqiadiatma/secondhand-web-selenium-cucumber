@@ -5,20 +5,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-
 import java.time.Duration;
 
 public class profilePage {
     protected WebDriver webDriver;
-
     public profilePage(WebDriver driver) {
         this.webDriver = driver;
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         PageFactory.initElements(webDriver, this);
     }
 
-    @FindBy(id = "form-avatar-image")
+    @FindBy(id = "form-avatar-input")
     private static WebElement select_image;
     @FindBy(id = "user_name")
     private static WebElement input_username;
@@ -31,9 +28,13 @@ public class profilePage {
     @FindBy(xpath = "//input[@type='submit']")
     private static WebElement button_save;
 
-    public static void user_do_update_profile(String username, String address, String phone) {
+    public static void user_do_update_profile(String username, String value, String address, String phone) {
+        keyword.clearText(input_username);
         keyword.inputText(input_username, username);
+        keyword.selectOption(select_city, value);
+        keyword.clearText(input_address);
         keyword.inputText(input_address, address);
+        keyword.clearText(input_userPhone);
         keyword.inputText(input_userPhone, phone);
         keyword.tapElement(button_save);
     }

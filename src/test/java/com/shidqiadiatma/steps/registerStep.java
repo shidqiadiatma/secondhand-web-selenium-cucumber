@@ -6,7 +6,6 @@ import com.shidqiadiatma.pages.registerPage;
 import io.cucumber.java.en.Then;
 
 public class registerStep {
-
     @Then("user direct to dashboard screen")
     public void userDirectToDashboardScreen() {
         new homePage(driverManager.getInstance().getDriver());

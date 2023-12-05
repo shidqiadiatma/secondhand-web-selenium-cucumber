@@ -10,7 +10,6 @@ import org.testng.Assert;
 import java.time.Duration;
 
 public class loginPage {
-
     protected WebDriver webDriver;
 
     public loginPage(WebDriver driver) {
@@ -44,6 +43,4 @@ public class loginPage {
         String actual = snackbar_error.getText();
         Assert.assertEquals(actual, expectedMessage);
     }
-
-
 }
