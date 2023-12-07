@@ -9,6 +9,11 @@ import org.testng.Assert;
 
 import java.time.Duration;
 
+/**
+ * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
+ * @project secondhand-web-selenium-cucumber
+ */
+
 public class loginPage {
     protected WebDriver webDriver;
 
@@ -42,5 +47,9 @@ public class loginPage {
     public void verify_snackbar_error_exist(String expectedMessage) {
         String actual = snackbar_error.getText();
         Assert.assertEquals(actual, expectedMessage);
+    }
+
+    public static void verifyCurrentURL(String url) {
+        keyword.assert_current_url(url);
     }
 }

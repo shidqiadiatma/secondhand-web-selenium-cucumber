@@ -8,9 +8,13 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
 
 import java.time.Duration;
+
+/**
+ * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
+ * @project secondhand-web-selenium-cucumber
+ */
 
 @CucumberOptions(features = "src/test/java/com/shidqiadiatma/features",
         glue = "com.shidqiadiatma.steps",

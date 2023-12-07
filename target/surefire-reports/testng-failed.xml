@@ -9,7 +9,7 @@
           <include name="teardownBrowser"/>
           <include name="setupBrowser"/>
           <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="runScenario" invocation-numbers="2"/>
         </methods>
       </class> <!-- com.shidqiadiatma.runners.testRunner -->
     </classes>

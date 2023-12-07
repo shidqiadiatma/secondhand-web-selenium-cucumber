@@ -8,6 +8,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.time.Duration;
 
+/**
+ * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
+ * @project secondhand-web-selenium-cucumber
+ */
+
 public class homePage {
     protected WebDriver webDriver;
     public homePage(WebDriver driver) {

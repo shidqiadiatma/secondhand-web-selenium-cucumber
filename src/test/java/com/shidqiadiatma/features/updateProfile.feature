@@ -8,3 +8,4 @@ Feature: Update Profile
     * user click profile icon
     * user change user profile data
     Then user verify profile data is changes
+    * user take screenshot "user-update-profile-successfully"

@@ -7,6 +7,11 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+/**
+ * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
+ * @project secondhand-web-selenium-cucumber
+ */
+
 public class browserFactory {
 
     public WebDriver launchBrowser(String browserName) {
@@ -14,6 +19,8 @@ public class browserFactory {
 
         switch (browserName.toLowerCase()) {
             case "chrome" -> {
+//                WebDriverManager.chromedriver().clearDriverCache().setup();
+//                WebDriverManager.chromedriver().clearResolutionCache().setup();
                 WebDriverManager.chromedriver().setup();
                 webDriver = new ChromeDriver();
             }

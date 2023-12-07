@@ -16,6 +16,11 @@ import org.openqa.selenium.support.ui.Select;
 import java.io.File;
 import java.time.Duration;
 
+/**
+ * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
+ * @project secondhand-web-selenium-cucumber
+ */
+
 public class keyword {
 
     public static void navigateToUrl(String url) {
@@ -39,7 +44,6 @@ public class keyword {
         wait_element_to_be_displayed(fileInput);
         fileInput.sendKeys(filePath);
     }
-
 
     public static void validate_element_is_visible_and_enabled(WebElement webElement) {
         WebDriverWait wait = new WebDriverWait(driverManager.getInstance().getDriver(), Duration.ofSeconds(5));
@@ -67,10 +71,6 @@ public class keyword {
         dropdown.selectByValue(value);
     }
 
-    public static void assertWording(String expectedUrl) {
-        String actualUrl = driverManager.getInstance().getDriver().getCurrentUrl();
-        Assert.assertEquals(actualUrl, expectedUrl);
-    }
     public static void take_screenshot(String fileName) {
         try {
             TakesScreenshot screenshot = ((TakesScreenshot) driverManager.getInstance().getDriver());
