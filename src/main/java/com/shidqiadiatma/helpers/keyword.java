@@ -16,11 +16,6 @@ import org.openqa.selenium.support.ui.Select;
 import java.io.File;
 import java.time.Duration;
 
-/**
- * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
- * @project secondhand-web-selenium-cucumber
- */
-
 public class keyword {
 
     public static void navigateToUrl(String url) {

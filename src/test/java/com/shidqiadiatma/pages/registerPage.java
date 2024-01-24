@@ -8,11 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import java.time.Duration;
 
-/**
- * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
- * @project secondhand-web-selenium-cucumber
- */
-
 public class registerPage {
     protected WebDriver webDriver;
     public registerPage(WebDriver driver) {

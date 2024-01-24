@@ -11,11 +11,6 @@ import org.testng.annotations.DataProvider;
 
 import java.time.Duration;
 
-/**
- * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
- * @project secondhand-web-selenium-cucumber
- */
-
 @CucumberOptions(features = "src/test/java/com/shidqiadiatma/features",
         glue = "com.shidqiadiatma.steps",
         tags = "",

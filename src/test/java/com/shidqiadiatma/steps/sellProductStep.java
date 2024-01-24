@@ -8,11 +8,6 @@ import com.shidqiadiatma.pages.sellProductPage;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
-/**
- * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
- * @project secondhand-web-selenium-cucumber
- */
-
 public class sellProductStep {
 
     @And("user click jual button")

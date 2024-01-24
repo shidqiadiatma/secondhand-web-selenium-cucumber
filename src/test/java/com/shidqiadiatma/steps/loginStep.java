@@ -7,11 +7,6 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-/**
- * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
- * @project secondhand-web-selenium-cucumber
- */
-
 public class loginStep {
 
     @When("user login using {string}")

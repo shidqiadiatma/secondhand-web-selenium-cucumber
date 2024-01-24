@@ -4,11 +4,6 @@ import com.shidqiadiatma.helpers.keyword;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 
-/**
- * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
- * @project secondhand-web-selenium-cucumber
- */
-
 public class commonStep {
 
     @Given("user navigate to url {string}")

@@ -7,11 +7,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
-/**
- * @author Shidqi Adiatma a.k.a. hipstertester on 07/12/23
- * @project secondhand-web-selenium-cucumber
- */
-
 public class randomData {
 
     static List<String> indexList = Arrays.asList("1", "2", "3", "4", "5");

@@ -8,6 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="project-binar-x-synrgy-shidqi" />
+        <module name="secondhand-web-selenium-cucumber" />
       </profile>
     </annotationProcessing>
   </component>
